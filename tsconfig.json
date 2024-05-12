@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "NodeNext",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"],
+      "@components/*": ["components/*"],
+      "@helpers/*": ["helpers/*"], // import { calculateTax } from '@helpers/tax'
+      "@models/*": ["models/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
